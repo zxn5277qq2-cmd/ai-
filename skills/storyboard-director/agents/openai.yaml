@@ -1,0 +1,7 @@
+interface:
+  display_name: "分镜导演"
+  short_description: "将剧本或场景拆解为专业分镜表，并生成适配AI视频的镜头提示词"
+  default_prompt: "Use $storyboard-director to turn this scene into a professional shot list and AI video prompts."
+
+policy:
+  allow_implicit_invocation: true
