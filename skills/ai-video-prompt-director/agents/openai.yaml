@@ -1,0 +1,5 @@
+interface:
+  display_name: "AI视频提示词导演"
+  short_description: "Create production-ready American English AI video prompts"
+  default_prompt: "Use $ai-video-prompt-director to turn this shot into a production-ready American English AI video prompt."
+

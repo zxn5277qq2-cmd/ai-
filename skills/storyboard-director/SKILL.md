@@ -57,6 +57,18 @@ description: Create professional storyboards and shot lists from scripts or scen
 | 镜号 | 画面描述 | 景别 | 机位高度 | 机位/轴线 | 构图/焦点 | 时长 | 备注 |
 |---|---|---|---|---|---|---|---|
 
+## 与 AI视频提示词导演协作
+
+多镜剧情先完成分镜表，再把每镜按以下字段交给 `$ai-director:ai-video-prompt-director`：
+
+| Shot ID | Duration | Narrative Beat | Character Anchors | Setting Anchors | Action Beats | Camera | Lighting | Continuity |
+|---|---|---|---|---|---|---|---|---|
+
+- 分镜导演负责镜头序列、轴线、景别、构图和节奏，不重复扩写冗长生成提示词。
+- AI视频提示词导演负责逐镜的美式英语提示词、动作物理、Identity/Motion 分离和一致性锁。
+- 单镜且动作明确的请求可以直接调用 `$ai-director:ai-video-prompt-director`。
+- 多镜协作时保留原镜号；全局风格和场景空间锁逐镜原文复用。
+
 ## 二、核心概念速查
 
 | 概念 | 一句话 | 关键要点 |
@@ -186,3 +198,4 @@ description: Create professional storyboards and shot lists from scripts or scen
 - Seedance 规则：基于公开和经验性提示词规范，模型行为可能随版本变化。
 - 本技能提供方法论与视觉参考，不替代实际创作判断。
 - 基础阶段优先保证空间方向和叙事清晰，熟练后再有意识地打破规则。
+

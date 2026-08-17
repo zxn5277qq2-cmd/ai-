@@ -18,3 +18,11 @@ $ai-director:storyboard-director
 .codex-plugin/plugin.json
 skills/
 ```
+
+## AI视频提示词导演
+
+```text
+$ai-director:ai-video-prompt-director
+```
+
+将单镜动作或分镜简报扩写为制作级美式英语 AI 视频提示词，支持角色与场景锚点、动作物理、摄影灯光、一致性锁、T2V/I2V 分流和失败诊断。它可以与“分镜导演”协作：先拆镜，再逐镜生成提示词。
